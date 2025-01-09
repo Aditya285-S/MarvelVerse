@@ -31,10 +31,10 @@ ALLOWED_HOSTS = [
     'marvelverse-r275.onrender.com',
 ]
 
-CSRF_COOKIE_SECURE = False
+CSRF_COOKIE_SECURE = True
 
 CSRF_TRUSTED_ORIGINS = ['https://marvelverse-r275.onrender.com']
-CSRF_COOKIE_DOMAIN = '.onrender.com'
+# CSRF_COOKIE_DOMAIN = '.onrender.com'
 
 
 SESSION_COOKIE_AGE = 86400
@@ -43,7 +43,7 @@ SESSION_COOKIE_AGE = 86400
 SESSION_EXPIRE_AT_BROWSER_CLOSE = False
 
 # Enable secure cookies for sessions (recommended for production)
-SESSION_COOKIE_SECURE = None
+SESSION_COOKIE_SECURE = True
 
 SESSION_COOKIE_HTTPONLY = True
 
